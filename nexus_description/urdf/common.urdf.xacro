@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="omni_uvbot" name="common">
+
+    <xacro:property name="wheel_mass" value="0.1" />
+    <xacro:macro name="default_origin">
+        <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    </xacro:macro>
+    #material definition
+    <material name="silver">
+        <color rgba="0.75 0.75 0.75 1" />
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0 0 1 1" />
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1" />
+    </material>
+
+    <material name="black">
+        <color rgba="0.1 0.1 0.1 1" />
+    </material>
+    <material name="grey">
+        <color rgba="0.3 0.3 0.3 1" />
+    </material>
+
+    <material name="green">
+        <color rgba="0.0 0.8 0.0 1.0" />
+    </material>
+
+    <material name="orange">
+        <color rgba="${255/255} ${108/255} ${10/255} 1.0" />
+    </material>
+
+    <material name="yellow">
+        <color rgba="${110/255} ${110/255} 0 1.0" />
+    </material>
+
+    <material name="brown">
+        <color rgba="${222/255} ${207/255} ${195/255} 1.0" />
+    </material>
+    #END OF material definition
+</robot>

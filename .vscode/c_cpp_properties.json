@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/carlos/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/carlos/catkin_ws/src/uvbot_metapackage/m-explore-master/explore/include/**",
+        "/home/carlos/catkin_ws/src/mind/mind_description/include/**",
+        "/home/carlos/catkin_ws/src/mind/mind_navigation/include/**",
+        "/home/carlos/catkin_ws/src/mind/mind_one/include/**",
+        "/home/carlos/catkin_ws/src/uvbot_metapackage/m-explore-master/map_merge/include/**",
+        "/home/carlos/catkin_ws/src/nexusROS/nexus_description/include/**",
+        "/home/carlos/catkin_ws/src/nexusROS/nexus_navigation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

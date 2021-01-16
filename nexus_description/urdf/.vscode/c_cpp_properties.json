@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/carlos/catkin_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/carlos/catkin_ws/src/action_client_pkg/include/**",
+        "/home/carlos/catkin_ws/src/all_to_laser/include/**",
+        "/home/carlos/catkin_ws/src/mecano_metapackage/art_vision/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/class2_topics/include/**",
+        "/home/carlos/catkin_ws/src/exoequeleton_metapackage/exo_navigation/include/**",
+        "/home/carlos/catkin_ws/src/exoequeleton_metapackage/exoequeleton_description/include/**",
+        "/home/carlos/catkin_ws/src/maps/include/**",
+        "/home/carlos/catkin_ws/src/mecano_metapackage/mecano_manipulator_my_control/include/**",
+        "/home/carlos/catkin_ws/src/mecano_metapackage/mecano_navigation/include/**",
+        "/home/carlos/catkin_ws/src/publisher_pkg/include/**",
+        "/home/carlos/catkin_ws/src/python_keyboard_driver/include/**",
+        "/home/carlos/catkin_ws/src/ricimaf_metapackage/ricimaf_gazebo/include/**",
+        "/home/carlos/catkin_ws/src/ricimaf_metapackage/ricimaf_navigation/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/ros_tutorials_action/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/ros_tutorial_service/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/ros_tutorial_topic/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/service_client_move_square_pkg/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/service_client_pkg/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/service_server_pkg/include/**",
+        "/home/carlos/catkin_ws/src/mecano_metapackage/speech_interface/include/**",
+        "/home/carlos/catkin_ws/src/swarm_robots/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/topic_publisher_pkg/include/**",
+        "/home/carlos/catkin_ws/src/class_metapackage/topic_subcriber_pkg/include/**",
+        "/home/carlos/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/carlos/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/carlos/catkin_ws/src/usb_cam/include/**",
+        "/home/carlos/catkin_ws/src/uvbot_metapackage/uvbot_navigation/include/**",
+        "/home/carlos/catkin_ws/src/uvbot_metapackage/uvbot_vision/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

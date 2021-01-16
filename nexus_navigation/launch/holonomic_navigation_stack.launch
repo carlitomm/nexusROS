@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <arg name="map_file" default="$(find uvbot_gazebo)/map/empty_map.yaml"/>
+
+    <include file="$(find nexus_description)/launch/display.launch"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster"
+          args="0 0 0 0 0 0 map odom 100"/>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <rosparam file="$(find nexus_navigation)/config/costmap_common_params.yaml" command="load"
+                  ns="global_costmap"/>
+        <rosparam file="$(find nexus_navigation)/config/costmap_common_params.yaml" command="load"
+                  ns="local_costmap"/>
+
+        <rosparam file="$(find nexus_navigation)/config/local_costmap_params.yaml" command="load"/>
+        <rosparam file="$(find nexus_navigation)/config/global_costmap_params.yaml" command="load"/>
+
+        <rosparam file="$(find nexus_navigation)config/base_global_planner.yaml" command="load"/>
+        <rosparam file="$(find nexus_navigation)/config/base_local_planner_params2.yaml" command="load"/>
+
+        <rosparam file="$(find nexus_navigation)/config/move_base_params2.yaml" command="load"/>
+    </node>
+
+    <!-- localization  -->
+
+    <!--include file="$(find amcl)/examples/amcl_diff.launch"/-->
+
+    <!-- mapping  -->
+
+    <include file="$(find nexus_navigation)/launch/mapping/gmapping.launch"/>
+    <!-- <include file="$(find nexus_navigation)/launch/mapping/rtabmap.launch"/> -->
+</launch>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="point_cloud_converter">
+        <remap from="/scan" to="/depth/scan"/>
+        <remap from="cloud_in" to="/uvbot/point_cloud"/>
+    </node>
+</launch>

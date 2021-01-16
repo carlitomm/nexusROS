@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="omni_uvbot" name="sensors">
+
+    <xacro:macro name="sensor_shape">
+        <box size="0.01 0.01 0.047" />
+    </xacro:macro>
+    <xacro:macro name="sensors">
+
+        <!-- LASER SENSOR -->
+
+        <joint name="laser_range_sensor_joint" type="fixed">
+            <axis xyz="0 0 0" />
+            <origin xyz="0.015 0.0 0.035" rpy="0 0 0" />
+            <parent link="base_link" />
+            <child link="laser_range_sensor" />
+        </joint>
+
+        <link name="laser_range_sensor">
+            <visual>
+                <geometry>
+                    <mesh filename="package://mind_description/mesh/laser.dae" />
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <xacro:sensor_shape/>
+                </geometry>
+            </collision>
+        </link>
+
+        <!-- camara sensor -->
+        
+        <!--joint name="camera_joint" type="fixed">
+            <axis xyz="0 0 0" />
+            <origin xyz="0.06 -0.06 0.06" rpy="0 0 -0.7" />
+            <parent link="uv_column" />
+            <child link="camera_link" />
+        </joint>
+
+        <link name="camera_link">
+            <visual>
+                <geometry>
+                    <xacro:sensor_shape />
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <xacro:sensor_shape />
+                </geometry>
+            </collision>
+        </link-->
+
+    </xacro:macro>
+
+
+</robot>

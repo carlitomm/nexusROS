@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <node pkg="laserscan_kinect" type="laserscan_kinect" name="laserscan_kinect">
+        <remap from="scan" to="/depth/scan"/>
+        <remap from="image" to="/uvbot/depth/image_raw"/>
+        <remap from="camera_info" to="/uvbot/rgb/camera_info"/>
+    </node>
+</launch>
